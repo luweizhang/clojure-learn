@@ -3,6 +3,6 @@
 
 ```
 => (use 'ring.adapter.jetty)
-=> (use 'hello-world.core)
+=> (use 'ring-app.core)
 => (run-jetty handler {:port 3000})
 ```
