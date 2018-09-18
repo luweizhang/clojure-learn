@@ -1,12 +1,18 @@
-<<<<<<< HEAD
-`lein run`
-=======
-`$ lein repl`
+# compojure test app
 
+`lein run`
+
+### useful links
+- https://clojurebridge.org/community-docs/docs/web-applications/easy-compojure/
+
+
+# OLD (using only ring)
+
+`$ lein repl`
 
 ```
 => (use 'ring.adapter.jetty)
 => (use 'ring-app.core)
 => (run-jetty handler {:port 3000})
 ```
->>>>>>> 87fb7b038fd762f8f8db74066fd1f4ea9928d1b0
+
