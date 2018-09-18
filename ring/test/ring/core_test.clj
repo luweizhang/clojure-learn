@@ -1,6 +1,6 @@
-(ns exopaste.core-test
+(ns ring.core-test
   (:require [clojure.test :refer :all]
-            [exopaste.core :refer :all]))
+            [ring.core :refer :all]))
 
 (deftest a-test
   (testing "FIXME, I fail."
