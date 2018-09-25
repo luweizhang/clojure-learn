@@ -8,6 +8,7 @@
 
 
 ### useful resources for learning clojure
+- https://www.tutorialspoint.com/clojure/
 - https://www.braveclojure.com/
 - http://www.4clojure.com/
 
