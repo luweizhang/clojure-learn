@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/body-parts/body-parts.iml" filepath="$PROJECT_DIR$/body-parts/body-parts.iml" />
+      <module fileurl="file://$PROJECT_DIR$/clojure-noob/clojure-noob.iml" filepath="$PROJECT_DIR$/clojure-noob/clojure-noob.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exopaste/exopaste.iml" filepath="$PROJECT_DIR$/exopaste/exopaste.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pegthing/pegthing.iml" filepath="$PROJECT_DIR$/pegthing/pegthing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ring-app/ring-app.iml" filepath="$PROJECT_DIR$/ring-app/ring-app.iml" />
+    </modules>
+  </component>
+</project>
