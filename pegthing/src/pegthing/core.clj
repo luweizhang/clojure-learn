@@ -57,7 +57,7 @@
 (defn connect-down-left
   [board max-pos pos]
   (let [row (row-num pos)
-        neighbor (+ row pos)
+        neighbor (+ row po    s)
         destination (+ 1 row neighbor)]
     (connect board max-pos pos neighbor destination)))
 
