@@ -27,4 +27,5 @@ Right click on `project.clj` file and load the project into the repl
 `cmd + shift + p` run code selection in the REPL <br>
 `cmd + shift + a` search for commands <br>
 `shift + f6` replace all instances of a variable <br>
+`cmd + option + f7` find all usages of a variable
 
