@@ -1,5 +1,7 @@
 # clojure-learn
 
+### useful clojure commands
+
 `lein new app <app_name>` create a new app <br>
 `lein deps` update your dependencies <br>
 `lein run` run your project’s “main” function after making sure all the dependencies are up to date. <br>
