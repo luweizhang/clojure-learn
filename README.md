@@ -19,7 +19,7 @@
 Cursive is a useful clojure plugin for intellij
 
 #### Load project into REPL
-Right click on project.clj file and load the project into the repl
+Right click on `project.clj` file and load the project into the repl
 
 `cmd + b` find the references <br>
 `cmd + shift + p` run code selection in the REPL <br>
