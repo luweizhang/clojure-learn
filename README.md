@@ -13,3 +13,15 @@
 - https://www.braveclojure.com/
 - http://www.4clojure.com/
 
+
+### cursive notes
+
+Cursive is a useful clojure plugin for intellij
+
+#### Load project into REPL
+Right click on project.clj file and load the project into the repl
+
+`cmd + b` find the references
+`cmd + shift + p` run code selection in the REPL
+`cmd + shift + a` search for commands
+
