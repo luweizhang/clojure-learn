@@ -30,3 +30,6 @@ Right click on `project.clj` file and load the project into the repl
 `shift + f6` replace all instances of a variable <br>
 `cmd + option + f7` find all usages of a variable
 
+### setup sublime text for clojure
+
+`cmd` + `shift` + `p` to bring up the package control
