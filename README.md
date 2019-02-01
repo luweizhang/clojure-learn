@@ -34,4 +34,4 @@ Right click on `project.clj` file and load the project into the repl
 
 1. `cmd` + `shift` + `p` to bring up the package control
 2. open package control: add repository
-3. install "ClojureREPL'
+3. install 'ClojureREPL'
