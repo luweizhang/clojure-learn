@@ -37,3 +37,7 @@ Right click on `project.clj` file and load the project into the repl
 3. install `ClojureREPL`
 4. restart sublime
 5. run the repl: `cmd` + `shift` + `p` and search for SublimeREPL: Clojure
+
+
+### setup emacs
+- https://www.braveclojure.com/basic-emacs/
