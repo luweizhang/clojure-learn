@@ -20,8 +20,22 @@
 
 Cursive is a useful clojure plugin for intellij
 
-#### Load project into REPL
-Right click on `project.clj` file and load the project into the repl
+#### Setup Intellij with cursive plugin, set up REPL, and run code
+
+1. Install cursive plugin
+2. nstall Java 8 Note that Java 9 or higher is not supported in SearchAPI
+3. With Homebrew, `brew tap adoptopenjdk/openjdk` then `brew cask install adoptopenjdk8`.
+If you already have a higher version of Java installed, select Java 8 as the SDK for SearchAPI.
+
+File → Project Structure → Project → SDK
+
+4. Setup the REPL
+
+Run → Edit Configurations → add Clojure REPL.
+
+5. Select clojure.main and Run with Leiningen options.
+
+6. Run the REPL
 
 #### Useful intellij/cursive commands
 `cmd + b` find the references <br>
