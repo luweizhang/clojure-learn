@@ -725,6 +725,17 @@ not=
 (fn [f coll] (into #{} (map set (vals (group-by f coll)))))
 ```
 
+```clojure
+(defn nextrow [row]
+  (vec (concat [1] (map #(apply + %) (partition 2 1 row)) [1] )))
+ 
+(defn pascal [n]
+  (assert (and (integer? n) (pos? n)))
+  (let [triangle (take n (iterate nextrow [1]))]
+    (doseq [row triangle]
+      (println row))))
+```
+
 [Problem 99: Product Digits [Easy]](http://www.4clojure.com/problem/99)
 
 ```clojure
