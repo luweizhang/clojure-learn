@@ -972,6 +972,17 @@ not=
     (count (filter #(< % (sum-digits %)) coll))))
 ```
 
+same as solution above, but I refactored everything using threaded macros for practice
+```clojure
+(fn sum-square [coll]
+  (let [string-to-int (fn [s] (-> s (int) (- 48)))
+        digits (fn [n] (->> n (str) (map string-to-int)))
+        square #(* % %)
+        sum-digits (fn [n] (->> n (digits) (map square) (reduce +)))]
+    (->> coll (filter #(< % (sum-digits %))) (count))
+    ))
+```
+
 [Problem 121: Universal Computation Engine [Medium]](http://www.4clojure.com/problem/121)
 
 ```clojure
@@ -1006,6 +1017,8 @@ not=
         mv (fn [st] (set (apply concat (keep vl (map #(wk st %) d)))))]
     (into {} (for [st e :let [mvs (mv st)] :when (not-empty mvs)] [st mvs]))))
 ```
+
+
 
 [Problem 125: Gus' Quinundrum [Hard]](http://www.4clojure.com/problem/125)
 
