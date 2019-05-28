@@ -118,6 +118,10 @@ true
 (comp second reverse)
 ```
 
+```clojure
+#(nth % (- (count %) 2))
+```
+
 [Problem 21: Nth Element [Easy]](http://www.4clojure.com/problem/21)
 
 ```clojure
