@@ -742,6 +742,10 @@ not=
 (fn [a b] (mapv #(Integer/parseInt (str %)) (str (* a b))))
 ```
 
+```clojure
+(fn [x y](map #(- (int %) 48) (seq (str (* x y)))))
+```
+
 [Problem 100: Least Common Multiple [Easy]](http://www.4clojure.com/problem/100)
 
 ```clojure
