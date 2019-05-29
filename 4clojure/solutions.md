@@ -256,6 +256,11 @@ mapcat #(list % %)
 #(apply concat (partition-all (dec %2) %2 %))
 ```
 
+```clojure 
+;; only works for numbers
+(fn [coll x] (filter (fn [n] (not= (rem n x) 0)) coll))
+```
+
 [Problem 42: Factorial Fun [Easy]](http://www.4clojure.com/problem/42)
 
 ```clojure
