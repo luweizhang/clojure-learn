@@ -198,6 +198,10 @@ partition-by identity
 mapcat #(list % %)
 ```
 
+```clojure
+(fn [coll] (sort (concat coll coll)))
+```
+
 [Problem 33: Replicate a Sequence [Easy]](http://www.4clojure.com/problem/33)
 
 ```clojure
