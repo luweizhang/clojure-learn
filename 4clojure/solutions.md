@@ -152,6 +152,10 @@ true
 #(filter odd? %)
 ```
 
+```clojure
+(fn [coll] (filter #(= 1 (rem % 2)) coll))
+```
+
 [Problem 26: Fibonacci Sequence [Easy]](http://www.4clojure.com/problem/26)
 
 ```clojure
