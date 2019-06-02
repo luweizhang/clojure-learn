@@ -1022,7 +1022,10 @@ same as solution above, but I refactored everything using threaded macros for pr
 
 ```clojure 
 ;;doesn't completely work because i was too lazy to debug, but general idea of how to implement it from scratch
-(defn [input] (reduce + (map (fn [[a b]] (Math/pow (+ (read-string b) 1) (int a))) (zipmap (range (count input)) (map str (seq input))))))
+(defn [input] (reduce + (map (fn [[a b]] 
+(Math/pow (+ (read-string b) 1) (int a))) 
+(zipmap (range (count input)) (map str (seq input))))
+))
 ```
 
 [Problem 124: Analyze Reversi [Hard]](http://www.4clojure.com/problem/124)
