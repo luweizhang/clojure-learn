@@ -961,6 +961,12 @@ not=
       (cons (f (first s)) (map- f (rest s))))))
 ```
 
+```clojure
+;; implemented using for loop, doesn't pass last test case due to time out
+(fn [f input] 
+  (for [x input] (f x)))
+```
+
 [Problem 119: Win at Tic-Tac-Toe [Hard]](http://www.4clojure.com/problem/119)
 
 ```clojure
