@@ -418,6 +418,11 @@ reduce #(if ((set %1) %2) %1 (conj %1 %2)) []
 #(apply merge-with into (for [v %2] {(% v) [v]}))
 ```
 
+```clojure
+(fn [f coll] (apply merge-with into (map (fn [x] {(f x) [x]}) coll )))
+```
+
+
 [Problem 64: Intro to Reduce [Elementary]](http://www.4clojure.com/problem/64)
 
 ```clojure
