@@ -1210,6 +1210,10 @@ Class
 #(map vector % (range))
 ```
 
+```clojure
+(zipmap [:a :b :c] (range (count [:a :b :c])))
+```
+
 [Problem 158: Decurry [Medium]](http://www.4clojure.com/problem/158)
 
 ```clojure
