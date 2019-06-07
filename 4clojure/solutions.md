@@ -319,6 +319,10 @@ mapcat #(list % %)
 (comp vals (partial group-by type))
 ```
 
+```clojure
+#(vals (group-by type %))
+```
+
 [Problem 51: Advanced Destructuring [Easy]](http://www.4clojure.com/problem/51)
 
 ```clojure
