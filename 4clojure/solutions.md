@@ -363,6 +363,10 @@ mapcat #(list % %)
 #(apply merge-with + (for [e %] {e 1}))
 ```
 
+```clojure
+(fn [coll] (apply merge (map (fn [[k v]] (hash-map k (count v)) ) (group-by identity coll))))
+```
+
 [Problem 56: Find Distinct Items [Medium]](http://www.4clojure.com/problem/56)
 
 ```clojure
