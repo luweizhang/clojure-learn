@@ -527,6 +527,16 @@ reduce +
     (apply str (interpose "," perfect))))
 ```
 
+```clojure
+(fn [s] (let [nums (clojure.string/split s #",")
+                 perfect? (fn [num] (= (Math/sqrt num) (Math/floor (Math/sqrt num))))
+                 ]
+
+             (clojure.string/join "," (filter #(perfect? (read-string %)) nums))
+             )
+ )
+```
+
 [Problem 75: Euler's Totient Function [Medium]](http://www.4clojure.com/problem/75)
 
 ```clojure
