@@ -537,6 +537,15 @@ reduce +
  )
 ```
 
+same thing as a above but i tried to use threaded macros
+```clojure
+(let [nums (clojure.string/split s #",")
+      perfect? (fn [num] (= (Math/sqrt num) (Math/floor (Math/sqrt num))))
+      ]
+  (->> nums (filter #(perfect? (read-string %))) (clojure.string/join ","))
+  )
+```
+
 [Problem 75: Euler's Totient Function [Medium]](http://www.4clojure.com/problem/75)
 
 ```clojure
