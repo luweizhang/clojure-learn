@@ -592,6 +592,16 @@ same thing as a above but i tried to use threaded macros
       (range 1 n)))))
 ```
 
+```clojure
+(fn [n] (= n (let [
+                   divisors (rest (range (+ 1 (Math/floor (/ n 2)))))  ;;all the divisors of 496
+                   ]
+               (apply + (filter #(= 0 (mod n %)) divisors))
+               )
+           )
+  )
+```
+
 [Problem 81: Set Intersection [Easy]](http://www.4clojure.com/problem/81)
 
 ```clojure
