@@ -570,6 +570,16 @@ same thing as a above but i tried to use threaded macros
             (remove (comp #{1} count val) (group-by frequencies ws)))))
 ```
 
+```clojure 
+(fn [coll] (set (filter #(> (count %) 1) (map set (map #(map second %) (map #(partition 2 %) (vals
+   (group-by set
+             (interleave
+               (map set coll)
+               coll
+               )
+             ))))))))
+```
+
 [Problem 78: Reimplement Trampoline [Medium]](http://www.4clojure.com/problem/78)
 
 ```clojure
