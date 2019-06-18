@@ -385,6 +385,13 @@ reduce #(if ((set %1) %2) %1 (conj %1 %2)) []
 (fn [& fs] (reduce (fn [f g] #(f (apply g %&))) fs))
 ```
 
+```clojure
+(fn comb [& funcs]
+  (fn [& args]
+    (first
+      (reduce #(vector (apply %2 %1)) args (reverse funcs )))))
+```
+
 [Problem 59: Juxtaposition [Medium]](http://www.4clojure.com/problem/59)
 
 ```clojure
