@@ -473,6 +473,20 @@ reduce #(if ((set %1) %2) %1 (conj %1 %2)) []
     (take cnt (filter prime? (iterate inc 2)))))
 ```
 
+```
+(fn [s]
+  (let [sieve (fn sieve [s]
+                (cons (first s)
+                      (lazy-seq (sieve (remove #(zero? (mod % (first s))) s)
+                                       )
+                                )
+                      ))]
+
+    (take s (sieve (iterate inc 2)))
+    )
+  )
+```
+
 [Problem 68: Recurring Theme [Elementary]](http://www.4clojure.com/problem/68)
 
 ```clojure
