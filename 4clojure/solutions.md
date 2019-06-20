@@ -473,7 +473,7 @@ reduce #(if ((set %1) %2) %1 (conj %1 %2)) []
     (take cnt (filter prime? (iterate inc 2)))))
 ```
 
-```
+```clojure
 (fn [s]
   (let [sieve (fn sieve [s]
                 (cons (first s)
@@ -485,6 +485,21 @@ reduce #(if ((set %1) %2) %1 (conj %1 %2)) []
     (take s (sieve (iterate inc 2)))
     )
   )
+```
+
+This works, but isn't a lazy sequence
+```clojure
+((fn [n] (let [divides? (fn [number divisor]
+                         (zero? (mod number divisor)))
+              is-prime? (fn [p]
+                          (let [possible-divisors (range 2 p)
+                                divides-p? (partial divides? p)]
+                            (not-any? divides-p? possible-divisors)))
+              numbers (range 2 n)]
+          (-> (filter is-prime? numbers)
+              ;;count ;; remove/comment this line to see the numbers
+              ))
+  ) 10)
 ```
 
 [Problem 68: Recurring Theme [Elementary]](http://www.4clojure.com/problem/68)
