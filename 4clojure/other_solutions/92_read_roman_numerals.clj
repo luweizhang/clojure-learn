@@ -23,3 +23,14 @@
 )
 
 (rnum-to-num "MMMCMXCIX");;5099 (wrong answer should be 3999)
+
+;; this works, uses the reverse / *4 trick
+(fn [s]
+  (let [numerals {\I 1, \V 5, \X 10, \L 50, \C 100, \D 500, \M 1000}
+        add-numeral (fn [n t]
+                      (if (> n (* 4 t))
+                        (- n t)
+                        (+ t n)))
+        ]
+    (reduce add-numeral (map numerals (reverse s)))
+    ))
