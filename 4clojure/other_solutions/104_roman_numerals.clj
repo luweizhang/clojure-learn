@@ -10,8 +10,8 @@
         lookup (fn [num-str] ((keyword (str num-str)) d-rnums))
         num-par (partition 2 1 rnums)
         parse-pair (fn [pair] (println pair) (if
-                                (>= (lookup (first pair)) (lookup (second pair)))
-                                (lookup (first pair))
+                                (>= (lookup (first pair)) (lookup (second pair))) ;; if first is greater than second
+                                (lookup (first pair)) ;; then first, else second minus first
                                 (- (lookup (second pair)) (lookup (first pair)))
                                 ) )
         ]
@@ -22,7 +22,4 @@
     )
 )
 
-;; if first is greater than second
-;; then first, else second minus first
-(rnum-to-num "MMMCMXCIX")
-;;5099 (wrong answer should be 3999)
+(rnum-to-num "MMMCMXCIX");;5099 (wrong answer should be 3999)
