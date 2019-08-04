@@ -1,6 +1,4 @@
 ;;doesn't work because it doesnt skip the next pair after noticing the subtractive rule...
-
-
 (defn rnum-to-num [rnums]
   (let [d-rnums {:M 1000
                  :C 100
@@ -24,9 +22,7 @@
     )
 )
 
-
 ;; if first is greater than second
 ;; then first, else second minus first
-
-
 (rnum-to-num "MMMCMXCIX")
+;;5099 (wrong answer should be 3999)
