@@ -8,6 +8,6 @@
           (first args)
           (partition 2 (rest args))))
 
-
 ;; e.g. (infix 1 + 7 - 3 + 5) returns 10
+;; reduce (fn [a [op b]] (op a b)) 1 ((+ 7)(- 3)(+ 5))
 
