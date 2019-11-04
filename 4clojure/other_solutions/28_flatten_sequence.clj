@@ -13,3 +13,9 @@
     (nil? h) ()
     (sequential? h) (concat (f h) (f t))
     true (cons h (f t))))
+
+
+;; solution 2
+
+(fn f [xs]
+  (mapcat #(if (sequential? %) (f %) [%]) xs))
