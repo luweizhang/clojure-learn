@@ -3,7 +3,7 @@
   (let [k (mod n (count seq))]
     (concat (drop k seq) (take k seq))))
 
-;;solution 2
+;; solution 2
 (fn [n x]
   (take (count x)
         (drop (mod n (count x))
