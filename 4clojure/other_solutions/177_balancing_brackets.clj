@@ -18,6 +18,14 @@
     )
    )
   )
+
+;; using reduce to iterate through the brackets (like a for loop)
+;; iterate through a vector of brackets and update the accumulator
+;; if the next element completes the bracket, then pop it from the stack
+;; otherwise, add the next element to the stack
+;; if the element is not a bracket, then ignore it 
+;; at the end check if there is anything inside the accumulator
+;; here, we are treating the accumulator as a stack.
   
 ;; solution 2
 (defn balanced? [string]
