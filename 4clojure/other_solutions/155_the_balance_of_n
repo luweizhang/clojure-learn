@@ -1,0 +1,18 @@
+;; soluton1, doesn't work, I didn't read the question correctly.
+
+(defn balance?
+  [num]
+
+  (let [
+        vec (vec (seq (str num)))
+        len (count vec)
+        end1  (int (/ len 2))
+        start2 (if (odd? len) (+ end1 1) end1)
+        side1 (subvec vec 0 end1)
+        side2 (subvec vec start2 len)
+        ]
+    (println side1)
+    (println side2)
+    (= side1 (reverse side2))
+    )
+  )
