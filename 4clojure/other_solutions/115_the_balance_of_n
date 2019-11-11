@@ -1,10 +1,11 @@
 ;; soluton1, doesn't work, I didn't read the question correctly.
 
-(defn balance?
+(fn 
   [num]
 
   (let [
-        vec (vec (seq (str num)))
+        vec  (vec (map int (seq (str num))))
+        #_ (println vec)
         len (count vec)
         end1  (int (/ len 2))
         start2 (if (odd? len) (+ end1 1) end1)
@@ -13,6 +14,6 @@
         ]
     (println side1)
     (println side2)
-    (= side1 (reverse side2))
+    (= (apply + side1) (apply + side2))
     )
   )
