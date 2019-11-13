@@ -1,8 +1,6 @@
-;; soluton1, doesn't work, I didn't read the question correctly.
+;; solution 1
 
-(fn 
-  [num]
-
+(fn [num]
   (let [
         vec  (vec (map int (seq (str num))))
         len (count vec)
@@ -11,6 +9,4 @@
         side1 (subvec vec 0 end1)
         side2 (subvec vec start2 len)
         ]
-    (= (apply + side1) (apply + side2))
-    )
-  )
+    (= (apply + side1) (apply + side2))))
