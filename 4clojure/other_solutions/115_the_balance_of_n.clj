@@ -5,15 +5,12 @@
 
   (let [
         vec  (vec (map int (seq (str num))))
-        #_ (println vec)
         len (count vec)
         end1  (int (/ len 2))
         start2 (if (odd? len) (+ end1 1) end1)
         side1 (subvec vec 0 end1)
         side2 (subvec vec start2 len)
         ]
-    (println side1)
-    (println side2)
     (= (apply + side1) (apply + side2))
     )
   )
