@@ -12,6 +12,8 @@
 
 
 ;; solution 2
+;; partition the last two into sliding window twos and add them together to get the next row
+
 
 (fn [n]
   (last
