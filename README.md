@@ -58,4 +58,4 @@ Cursive is a useful clojure plugin for intellij
 ### webdev
 
 - compojure
-1. https://learnxinyminutes.com/docs/compojure/
+  - https://learnxinyminutes.com/docs/compojure/
