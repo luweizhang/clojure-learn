@@ -64,4 +64,4 @@ Cursive is a useful clojure plugin for intellij
   
 ### useful resources
 - https://www.clojure-toolbox.com/
--- list of useful clojure tools
+  - list of useful clojure tools
