@@ -19,6 +19,7 @@
 ### cursive notes
 
 Cursive is a useful clojure plugin for intellij
+https://cursive-ide.com/
 
 #### Setup Intellij with cursive plugin, set up REPL, and run code
 
