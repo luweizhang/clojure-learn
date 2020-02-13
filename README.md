@@ -24,7 +24,7 @@
 #### Setup Intellij with cursive plugin, set up REPL, and run code
 
 1. Install cursive plugin
-2. Install Java 8 Note that Java 9 or higher is not supported in SearchAPI
+2. Install Java
 - With Homebrew, `brew tap adoptopenjdk/openjdk` then `brew cask install adoptopenjdk8`.
 - If you already have a higher version of Java installed, select Java 8 as the SDK for SearchAPI.
 -- File → Project Structure → Project → SDK
