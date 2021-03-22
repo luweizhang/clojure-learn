@@ -1,4 +1,4 @@
-http://www.4clojure.com/
+https://www.4clojure.com/problems
 
 ### Keep track of what problems I've done:
 1
